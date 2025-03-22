@@ -6,6 +6,8 @@ select * from transactions
 
 -- dectecting fraud transactions
 
+    
+
 WITH RECURSIVE fraud_chain as (
 SELECT nameOrig as initial_account,
 nameDest as next_account,
