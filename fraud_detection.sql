@@ -10,6 +10,7 @@ FROM transactions
 WHERE isFraud = 1;
 
 -- common transaction types  for fraud cases
+
  SELECT type, COUNT(*) AS fraud_count
 FROM transactions
 WHERE isFraud = 1
@@ -62,7 +63,7 @@ WHERE fraud_rolling > 0 ;
 
 
 
--- 3. Complex Fraud Detection Using Multiple CTEs
+--  Complex Fraud Detection Using Multiple CTEs
 
 
 WITH large_transfers as (
@@ -83,7 +84,7 @@ JOIN
 
 
 
--- 4. Write me a query that checks if the computed new_updated_Balance is the same as the actual newbalanceDest in the table. If they are equal, it returns those rows.
+--  Write me a query that checks if the computed new_updated_Balance is the same as the actual newbalanceDest in the table. If they are equal, it returns those rows.
 
 with CTE as (
 SELECT amount,nameorig,oldbalancedest,newbalanceDest,(amount+oldbalancedest) as new_updated_Balance 
