@@ -1,6 +1,7 @@
 # Fraud_detection
 
  This sql analysis is designed to analyze banking transactions and identify potential fraudulent activities. The script includes several SQL queries, each targeting specific fraud detection scenarios:​
+ 
 
 The Entity-Relationship diagrame is as follows -
 
@@ -16,5 +17,13 @@ The Entity-Relationship diagrame is as follows -
 
 **Detecting Large Transfers Followed by Small Transactions:** This part identifies accounts that perform large transfers followed by smaller transactions within a short time frame, which can be indicative of fraudulent behavior. It uses multiple CTEs to first select large transfers and then find subsequent smaller transactions from the same account within a defined step range.
 
+[fraud_count.csv](https://github.com/user-attachments/files/19401027/fraud_count.csv)
 
 These queries leverage advanced SQL techniques, such as **recursive CTEs and window functions**, to uncover patterns and anomalies in transaction data that may signify fraudulent activities. By analyzing transaction sequences, rolling sums of fraud occurrences, and patterns of large and small transactions, the script aims to provide a comprehensive approach to fraud detection in banking operations.
+
+[fraud_type.csv](https://github.com/user-attachments/files/19401030/fraud_type.csv)
+
+[heavy_transactions.csv](https://github.com/user-attachments/files/19401031/heavy_transactions.csv)fraud_percentage_above_10k
+96.61512
+
+
