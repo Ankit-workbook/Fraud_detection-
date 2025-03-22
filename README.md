@@ -27,3 +27,12 @@ These queries leverage advanced SQL techniques, such as **recursive CTEs and win
 96.61512
 
 
+![Screenshot 2025-03-22 111529](https://github.com/user-attachments/assets/8e25652b-d37f-4604-8130-3feca389dbc5)
+![Screenshot 2025-03-22 111245](https://github.com/user-attachments/assets/6e9e5888-070b-499b-91b6-12f097646d00)
+![Screenshot 2025-03-22 111529](https://github.com/user-attachments/assets/4c582fbc-d1eb-4246-860d-4f9e7bfbc31e)
+![Screenshot 2025-03-22 111245](https://github.com/user-attachments/assets/a76209b3-2ea4-451e-92bb-50b61f74d65e)
+
+![Screenshot 2025-03-22 112254](https://github.com/user-attachments/assets/fdadc606-827f-4fbd-878b-e6b32f3a185b)
+[heavy_transactions.csv](https://github.com/user-attachments/files/19401034/heavy_transactions.csv)fraud_percentage_above_10k
+96.61512
+
