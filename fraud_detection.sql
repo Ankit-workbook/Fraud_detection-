@@ -3,6 +3,28 @@ use bank;
 
 select * from transactions
 
+-- number of fraudulent transactions 
+
+ SELECT COUNT(*) AS fraud_count
+FROM transactions
+WHERE isFraud = 1;
+
+-- common transaction types  for fraud cases
+ SELECT type, COUNT(*) AS fraud_count
+FROM transactions
+WHERE isFraud = 1
+GROUP BY type
+ORDER BY fraud_count DESC;
+
+
+--  percentage of fraudulent transactions are above a certain threshold  $10,000
+
+SELECT 
+    (COUNT(CASE WHEN amount > 10000 THEN 1 END) * 100.0 / COUNT(*)) AS fraud_percentage_above_10k
+FROM transactions
+WHERE isFraud = 1;
+
+
 
 -- dectecting fraud transactions
 
